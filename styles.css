@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.freeze-2{
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 410px;
+    height: 210px;
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.portfolio h1 {
+    font-size: 6rem;
+    color: #f5f5f5;
+}
+
+.button-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Отступ между логотипом и текстом */
+    width: 400px; /* Ширина кнопки */
+    height: 160px; /* Высота кнопки */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid transparent;
+    border-radius: 18px;
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.button img {
+    width: 100px; /* Размер логотипа */
+    height: 100px;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.1); /* Прозрачный белый слой */
+    color: #fff; /* Убедимся, что текст всегда белый */
+}
+
+.button.steam {
+    background-color: #1b2838;
+    border-color: #1b2838;
+}
+
+.button.steam:hover {
+    border-color: #00adee;
+}
+
+.button.discord {
+    background-color: #5865f2;
+    border-color: #5865f2;
+}
+
+.button.discord:hover {
+    border-color: #7289da;
+    background-color: #4653d8; /* Добавляем слегка осветленный цвет при наведении */
+}
+
+.button.spotify {
+    background-color: #1db954;
+    border-color: #1db954;
+}
+
+.button.spotify:hover {
+    border-color: #1ed760;
+    background-color: #18a744; /* Осветленный зеленый цвет */
+}
+
+.button.telegram {
+    background-color: #0088cc;
+    border-color: #0088cc;
+}
+
+.button.telegram:hover {
+    border-color: #00b0ee;
+    background-color: #0077b3; /* Темно-синий цвет */
+}
+
+/* Для телефонов: кнопки одна под другой */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 90%;
+        max-width: 400px;
+    }
+}
