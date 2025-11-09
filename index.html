@@ -23,47 +23,49 @@
     <script src="titleanim.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my links</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body>
-    <div class="background">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
+    <div id="stars-container"></div>
 
     <div class="card">
-      <h1>find me here</h1>
-      <div class="buttons">
-        <a
-          class="btn instagram"
-          href="https://instagram.com/max.hapon"
-          target="_blank"
-        >
-          <i class="fab fa-instagram"></i> Instagram
+      <div class="header">
+        <div class="avatar">
+          <img src="image/avatar.jpg" alt="Avatar" />
+        </div>
+        <div class="nick">
+          <h1>FENTEZ 🇺🇦</h1>
+          <div class="status">光は希望を見つけるだろう</div>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://t.me/fentezua" class="btn telegram">
+          <i class="fab fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a href="https://instagram.com/max.hapon" class="btn instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://steamcommunity.com/id/marko_jenkins" class="btn steam">
+          <i class="fab fa-steam"></i>
+          <span>Steam</span>
         </a>
         <a
-          class="btn discord"
           href="https://discord.com/users/664172314602110976"
-          target="_blank"
+          class="btn discord"
         >
-          <i class="fab fa-discord"></i> Discord
-        </a>
-        <a
-          class="btn steam"
-          href="https://steamcommunity.com/id/marko_jenkins"
-          target="_blank"
-        >
-          <i class="fab fa-steam"></i> Steam
-        </a>
-        <a class="btn telegram" href="https://t.me/fentezua" target="_blank">
-          <i class="fab fa-telegram"></i> Telegram
+          <i class="fab fa-discord"></i>
+          <span>Discord</span>
         </a>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
